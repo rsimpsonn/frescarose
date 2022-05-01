@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+
 import './App.css';
+import React, { useState } from 'react';
+import Introduction from './Introduction';
+import View from './View';
+import Title from './Title';
+import Outcome from './Outcome';
 
 function App() {
+
+  const [vars, setVars] = useState({})
+  const [showView, setView] = useState(0)
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    {showView == 0 &&
+    <Introduction name={vars['name']} setName={(name) => setVars({...vars, name: name, firstName: name.split(" ")[0]})} setView={setView} />}
+    {showView == 1 &&
+    <View vars={vars} setVars={setVars} setView={setView} />}
+    {showView == 2 &&
+    <Outcome vars={vars} />}
     </div>
   );
 }

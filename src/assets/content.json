@@ -1,0 +1,941 @@
+{
+	"introduction": "../docs/introduction.txt",
+	"messages": [
+		[
+			{
+				"from": "Todd Lorax",
+				"title": "Where's the folk?",
+				"message": "../docs/set_one/todd.txt",
+				"attachments": [
+					{
+						"title": "See the difference?",
+						"link": "https://www.weareclassicrockers.com/sites/classicrockers.rock.tools/files/styles/site_width_image/public/2021-06/GettyImages-1056863564.jpg?itok=FYi8P-e8",
+						"type": "image"
+					},
+					{
+						"title": "",
+						"link": "http://4.bp.blogspot.com/-ms9WOBm6jEM/VjoiS3T28EI/AAAAAAAA8Aw/dJPQJYdh__g/s1600/MISSJOHNHURT.jpg",
+						"type": "image"
+					},
+					{
+						"title": "",
+						"link": "https://www.udiscovermusic.com/wp-content/uploads/2018/10/Rolling-Stones-Ed-SullivanGettyImages-74293283.jpg",
+						"type": "image"
+					},
+					{
+						"title": "",
+						"link": "https://api.time.com/wp-content/uploads/2017/03/chuck-berry-18.jpg",
+						"type": "image"
+					}
+				]
+			},
+			{
+				"from": "Butch Casserole",
+				"title": "Booking Talks",
+				"message": "../docs/set_one/butch.txt",
+				"decision": {
+					"title": "Which artist would you like to book?",
+					"variable": "bigNameArtist",
+					"options": [
+					{
+						"title": "Dob Billin",
+						"variable": "Dob Billon",
+						"cost": 25,
+						"outcome": "festivalTwo"
+					},
+					{
+						"title": "Bone Jazz",
+						"variable": "Bone Jazz",
+						"cost": 25,
+						"outcome": "festivalTwo"
+					},
+					{
+						"title": "Weeler Barrow",
+						"variable": "Weeler Barrow",
+						"cost": 25,
+						"outcome": "festivalTwo"
+					}
+				]
+				},
+				"attachments": [
+					{
+						"title": "Dob Billin: musician of the people, relatively new on the scene but already considered one of the best, played Frescarose last two years.",
+						"link": "https://www.youtube.com/embed/vWwgrjjIMXA",
+						"type": "video"
+					},
+					{
+						"title": "Bone Jazz: one of the most popular female artists, discovered at first-ever Frescarose festival after artist invited her on-stage, played Frescarose last five years.",
+						"link": "https://www.youtube.com/embed/nM39QUiAsoM",
+						"type": "video"
+					},
+					{
+						"title": "Weeler Barrow: of the band Weeler, Ball and Sheri, highly active and well-known artist in the folk community, absolutely prolific.",
+						"link": "https://www.youtube.com/embed/z15pxWUXvLY",
+						"type": "video"
+					}
+				]
+			}
+		],
+		[
+			{
+				"from": "Richard Blank",
+				"title": "Grant Inquiry",
+				"message": "../docs/set_two/richard.txt",
+				"decision": {
+					"title": "Would you like to send Richard a tape recorder?",
+					"variable": "sendRichardRecorder",
+					"options": [
+						{
+							"title": "Send it",
+							"variable": "approvedRichardRecorder",
+							"cost": 5,
+							"outcome": "festivalOne"
+						},
+						{
+							"title": "Ignore his message",
+							"variable": "ignoredRichardRecorder",
+							"cost": 0,
+							"outcome": "festivalTwo"
+						}
+					]
+				},
+				"attachments": [
+					{
+						"title": "My discovered record of Tim Jenkins",
+						"link": "https://www.popsike.ch/pix/20040625/4021154518.jpg",
+						"type": "image"
+					}
+				]
+			},
+			{
+				"from": "Don",
+				"title": "Quick trip",
+				"message": "../docs/set_two/don.txt",
+				"decision": {
+					"title": "Would you like to send Ron to Mississippi?",
+					"variable": "sendRonToMS",
+					"options": [
+						{
+							"title": "Approve his trip",
+							"variable": "approvedRonMS",
+							"cost": 5,
+							"outcome": "festivalOne"
+						},
+						{
+							"title": "Have Ron stay in Nashville",
+							"variable": "deniedRonMS",
+							"cost": 0,
+							"outcome": "festivalTwo"
+						}
+					]
+				},
+				"attachments": []
+			},
+			{
+				"from": "Paul Trout",
+				"title": "Royalties + Tribute",
+				"message": "../docs/set_two/paul.txt",
+				"decision": {
+					"title": "How do you want to hold the Bellylead tribute?",
+					"variable": "lbTributeStyle",
+					"options": [
+						{
+							"title": "Paul's first option",
+							"variable": "lbTraditionalStyle",
+							"cost": 0,
+							"outcome": "festivalOne"
+						},
+						{
+							"title": "Paul's second option",
+							"variable": "lbContempStyle",
+							"cost": 0,
+							"outcome": "festivalTwo"
+						}
+					]
+				},
+				"attachments": [
+					{
+						"title": "March royalties for Lorax's book: $248",
+						"link": "https://d2skn5554g4boz.cloudfront.net/content/images/513/larger/3382685_1.jpg",
+						"type": "image"
+					}
+				]
+			},
+			{
+				"from": "Pete",
+				"title": "Chicago",
+				"message": "../docs/set_two/pete.txt",
+				"decision": {
+					"title": "Do you want to connect with Checkers Records?",
+					"variable": "connectWithCheckers",
+					"options": [
+						{
+							"title": "Connect with Checkers",
+							"variable": "connectedCheckers",
+							"cost": 0,
+							"outcome": "festivalTwo"
+						},
+						{
+							"title": "Don't connect with Checkers",
+							"variable": "ignoredCheckers",
+							"cost": 0,
+							"outcome": "festivalOne"
+						}
+					]
+				},
+				"attachments": [
+					{
+						"title": "Chicago blues",
+						"link": "https://www.youtube.com/embed/ZEgGslcXXL0",
+						"type": "video"
+					},
+					{
+						"title": "Photos from bars",
+						"link": "https://i.pinimg.com/736x/46/20/97/4620977b4db422524e1c6c9c203c1f9a--andrew-mcmahon-howlin-wolf.jpg",
+						"type": "image"
+					},
+					{
+						"title": "",
+						"link": "https://bobcorritore.files.wordpress.com/2013/07/mojo_buford.jpg",
+						"type": "image"
+					}
+				]
+			},
+			{
+				"from": "^bigNameArtist",
+				"title": "Which way the wind blows",
+				"message": "../docs/set_two/big_act.txt",
+				"attachments": [
+					{
+						"title": "Tambourine Man",
+						"link": "https://www.youtube.com/embed/OeP4FFr88SQ",
+						"type": "video"
+					}
+				]
+			}
+		],
+		[
+			{
+				"from": "Todd",
+				"title": "Informants",
+				"message": "../docs/set_three/todd_one.txt",
+				"qualifiers": {
+					"sendRichardRecorder": "approvedRichardRecorder"
+				},
+				"attachments": [
+					{
+						"title": "Manual for Folklore Collection",
+						"link": "../docs/guide/guide1.jpeg",
+						"type": "image"
+					},
+					{
+						"title": "",
+						"link": "../docs/guide/guide2.jpeg",
+						"type": "image"
+					},
+					{
+						"title": "",
+						"link": "../docs/guide/guide3.jpeg",
+						"type": "image"
+					},
+					{
+						"title": "",
+						"link": "../docs/guide/guide4.jpeg",
+						"type": "image"
+					},
+					{
+						"title": "",
+						"link": "../docs/guide/guide5.jpeg",
+						"type": "image"
+					},
+					{
+						"title": "",
+						"link": "../docs/guide/guide6.jpeg",
+						"type": "image"
+					},
+					{
+						"title": "",
+						"link": "../docs/guide/guide7.jpeg",
+						"type": "image"
+					}
+				]
+			},
+			{
+				"from": "Todd",
+				"title": "Informants",
+				"message": "../docs/set_three/todd_two.txt",
+				"qualifiers": {
+					"sendRichardRecorder": "ignoredRichardRecorder"
+				},
+				"attachments": [
+					{
+						"title": "Manual for Folklore Collection",
+						"link": "../docs/guide/guide1.jpeg",
+						"type": "image"
+					},
+					{
+						"title": "",
+						"link": "../docs/guide/guide2.jpeg",
+						"type": "image"
+					},
+					{
+						"title": "",
+						"link": "../docs/guide/guide3.jpeg",
+						"type": "image"
+					},
+					{
+						"title": "",
+						"link": "../docs/guide/guide4.jpeg",
+						"type": "image"
+					},
+					{
+						"title": "",
+						"link": "../docs/guide/guide5.jpeg",
+						"type": "image"
+					},
+					{
+						"title": "",
+						"link": "../docs/guide/guide6.jpeg",
+						"type": "image"
+					},
+					{
+						"title": "",
+						"link": "../docs/guide/guide7.jpeg",
+						"type": "image"
+					}
+				]
+			},
+			{
+				"from": "Don",
+				"title": "Mississippi",
+				"message": "../docs/set_three/don_one.txt",
+				"qualifiers": {
+					"sendRonToMS": "approvedRonMS"
+				},
+				"decision": {
+					"title": "Do you want Don to stay in Mississippi?",
+					"variable": "donStay",
+					"options": [
+						{
+							"title": "Stay in Mississippi",
+							"variable": "approveDonStayMS",
+							"cost": 5,
+							"outcome": "festivalOne"
+						},
+						{
+							"title": "Leave Mississippi",
+							"variable": "denyDonStayMS",
+							"cost": 0,
+							"outcome": "festivalTwo"
+						}
+					]
+				},
+				"attachments": []
+			},
+			{
+				"from": "Don",
+				"title": "Nashville",
+				"message": "../docs/set_three/don_two.txt",
+				"qualifiers": {
+					"sendRonToMS": "deniedRonMS"
+				},
+				"decision": {
+					"title": "Do you want Don to stay in Nashville?",
+					"variable": "donStay",
+					"options": [
+						{
+							"title": "Stay in Nashville",
+							"variable": "approveDonStayTN",
+							"cost": 5,
+							"outcome": "festivalOne"
+						},
+						{
+							"title": "Leave Nashville",
+							"variable": "denyDonStayTN",
+							"cost": 0,
+							"outcome": "festivalTwo"
+						}
+					]
+				},
+				"attachments": []
+			},
+			{
+				"from": "Paul Trout",
+				"title": "Tribute Followup",
+				"message": "../docs/set_three/paul_one.txt",
+				"qualifiers": {
+					"lbTributeStyle": "lbTraditionalStyle"
+				},
+				"decision": {
+					"title": "Do you want to focus on the early stages of Bellylead's career?",
+					"variable": "lbEarlyStages",
+					"options": [
+						{
+							"title": "Yes play early Bellylead",
+							"variable": "lbEarlyStagesYes",
+							"cost": 0,
+							"outcome": "festivalOne"
+						},
+						{
+							"title": "No play a broader range",
+							"variable": "lbEarlyStagesNo",
+							"cost": 0,
+							"outcome": "festivalTwo"
+						}
+					]
+				},
+				"attachments": [
+					{
+						"title": "Traditional Bellylead song",
+						"link": "https://www.youtube.com/embed/D7TRXF7HCZA",
+						"type": "video"
+					},
+					{
+						"title": "Less traditional Bellylead song",
+						"link": "https://www.youtube.com/embed/-KxlutC-A50",
+						"type": "video"
+					}
+				]
+			},
+			{
+				"from": "Paul Trout",
+				"title": "Tribute Music",
+				"message": "../docs/set_three/paul_two.txt",
+				"qualifiers": {
+					"lbTributeStyle": "lbContempStyle"
+				},
+				"decision": {
+					"title": "Do you want to focus on the early stages of Bellylead's career?",
+					"variable": "lbEarlyStages",
+					"options": [
+						{
+							"title": "Yes play early Bellylead",
+							"variable": "lbEarlyStagesYes",
+							"cost": 0,
+							"outcome": "festivalOne"
+						},
+						{
+							"title": "No play a broader range",
+							"variable": "lbEarlyStagesNo",
+							"cost": 0,
+							"outcome": "festivalTwo"
+						}
+					]
+				},
+				"attachments": [
+					{
+						"title": "Traditional Bellylead song",
+						"link": "https://www.youtube.com/embed/D7TRXF7HCZA",
+						"type": "video"
+					},
+					{
+						"title": "Less traditional Bellylead song",
+						"link": "https://www.youtube.com/embed/KxlutC-A50",
+						"type": "video"
+					}
+				]
+			},
+			{
+				"from": "Leonard Checkers",
+				"title": "Checkers Records",
+				"message": "../docs/set_four/leonard.txt",
+				"qualifiers": {
+					"connectWithCheckers": "connectedCheckers"
+				},
+				"decision": {
+					"title": "Would you like Wolf to perform acoustic or electric?",
+					"variable": "wolfStyle",
+					"options": [
+						{
+							"title": "Have Wolf perform electric",
+							"variable": "acoustic",
+							"cost": 0,
+							"outcome": "festivalTwo"
+						},
+						{
+							"title": "Have Wolf perform acoustic",
+							"variable": "electric",
+							"cost": 0,
+							"outcome": "festivalOne"
+						}
+					]
+				},
+				"attachments": [
+					{
+						"title": "John Lee Hooker, Boom Boom (1962)",
+						"link": "https://www.youtube.com/embed/V1xcM3XCvPE",
+						"type": "video"
+					},
+					{
+						"title": "John Lee Hooker at Frescarose last year",
+						"link": "https://www.youtube.com/embed/i75IRka32AQ",
+						"type": "video"
+					},
+					{
+						"title": "Muddy Waters, Folk Singer (1964)",
+						"link": "https://www.youtube.com/embed/Y_TJoSf6_z0",
+						"type": "video"
+					}, 
+					{
+						"title": "Muddy Waters, Rollin Stone (1954)",
+						"link": "https://www.youtube.com/embed/z5RwNit_HUw",
+						"type": "video"
+					}
+				]
+			},
+			{
+				"from": "Pete",
+				"title": "Wolf on TV",
+				"message": "../docs/set_three/pete.txt",
+				"qualifiers": {
+					"connectWithCheckers": "ignoredCheckers"
+				},
+				"decision": {
+					"title": "Do you want to connect with Checkers Records?",
+					"variable": "connectWithCheckers2",
+					"options": [
+						{
+							"title": "Yes, connect with Checkers Records",
+							"variable": "connectedCheckers2",
+							"cost": 0,
+							"outcome": "festivalTwo"
+						},
+						{
+							"title": "Ignore Pete again",
+							"variable": "ignoreCheckers2",
+							"cost": 0,
+							"outcome": "festivalOne"
+						}
+					]
+				},
+				"attachments": [
+					{
+						"title": "Howlin Wolf on Shindig!",
+						"link": "https://www.youtube.com/embed/gWBS0GX1s9o",
+						"type": "video"
+					}
+				]
+			}
+		],
+		[
+			{
+				"from": "Richard Blank",
+				"title": "News from Somewhere",
+				"message": "../docs/set_four/richard_one.txt",
+				"qualifiers": {
+					"sendRichardRecorder": "approvedRichardRecorder"
+				},
+				"attachments": [
+					{
+						"title": "Somewhere, Mississippi",
+						"link": "http://www.mississippifolklife.org/images/resizer_cache/46df743bbb304803454298ec56b61a4a966a0c04.jpg",
+						"type": "image"
+					}
+				]
+			},
+			{
+				"from": "Richard Blank",
+				"title": "News from Somewhere",
+				"message": "../docs/set_four/richard_two.txt",
+				"qualifiers": {
+					"sendRichardRecorder": "ignoredRichardRecorder"
+				},
+				"decision": {
+					"title": "Would you like to send Richard a tape recorder?",
+					"variable": "sendRichardRecorder",
+					"options": [
+						{
+							"title": "Send it",
+							"variable": "approvedRichardRecorder",
+							"cost": 5,
+							"outcome": "festivalOne"
+						},
+						{
+							"title": "Ignore his message",
+							"variable": "ignoredRichardRecorder",
+							"cost": 0,
+							"outcome": "festivalTwo"
+						}
+					]
+				},
+				"attachments": [
+					{
+						"title": "Somewhere, Mississippi",
+						"link": "http://www.mississippifolklife.org/images/resizer_cache/46df743bbb304803454298ec56b61a4a966a0c04.jpg",
+						"type": "image"
+					}
+				]
+			},
+			{
+				"from": "Don",
+				"title": "Mississippi (Again)",
+				"message": "../docs/set_four/don_two.txt",
+				"qualifiers": {
+					"donStay": "approveDonStayMS"
+				},
+				"attachments": [
+					{
+						"title": "Harmonica player",
+						"link": "https://www.youtube.com/embed/K-PhBryFuIM",
+						"type": "video"
+					}
+				]
+			},
+			{
+				"from": "Don",
+				"title": "Nashville (Again)",
+				"message": "../docs/set_four/don_one.txt",
+				"qualifiers": {
+					"donStay": "approveDonStayTN"
+				},
+				"attachments": [
+					{
+						"title": "Ford Bales",
+						"link": "https://www.youtube.com/embed/yjlR8eS0YPM",
+						"type": "video"
+					}
+				]
+			},
+			{
+				"from": "Paul Trout",
+				"title": "Tribute Style",
+				"message": "../docs/set_four/paul.txt",
+				"decision": {
+					"title": "Would you like to hold the Bellylead tribute in this style?",
+					"variable": "lbTributeStyle",
+					"options": [
+						{
+							"title": "Yes hold it this way",
+							"variable": "lbTributeStyleYes",
+							"cost": 0,
+							"outcome": "festivalOne"
+						},
+						{
+							"title": "No hold it regularly",
+							"variable": "lbTributeStyleNo",
+							"cost": 0,
+							"outcome": "festivalTwo"
+						}
+					]
+				},
+				"attachments": [
+					{
+						"title": "Bellylead with prison officials",
+						"link": "http://news.emory.edu/slideshows/african_american_photo_collection/slideshow-6.jpg",
+						"type": "image"
+					}
+				]
+			},
+			{
+				"from": "Leonard Checkers",
+				"title": "Checkers Records",
+				"message": "../docs/set_four/leonard.txt",
+				"qualifiers": {
+					"connectWithCheckers": "ignoredCheckers",
+					"connectWithCheckers2": "connectedCheckers2"
+				},
+				"decision": {
+					"title": "Would you like Wolf to perform acoustic or electric?",
+					"variable": "wolfStyle",
+					"options": [
+						{
+							"title": "Have Wolf perform electric",
+							"variable": "acoustic",
+							"cost": 0,
+							"outcome": "festivalTwo"
+						},
+						{
+							"title": "Have Wolf perform acoustic",
+							"variable": "electric",
+							"cost": 0,
+							"outcome": "festivalOne"
+						}
+					]
+				},
+				"attachments": [
+					{
+						"title": "John Lee Hooker, Boom Boom (1962)",
+						"link": "https://www.youtube.com/embed/V1xcM3XCvPE",
+						"type": "video"
+					},
+					{
+						"title": "John Lee Hooker at Frescarose last year",
+						"link": "https://www.youtube.com/embed/i75IRka32AQ",
+						"type": "video"
+					},
+					{
+						"title": "Muddy Waters, Folk Singer (1964)",
+						"link": "https://www.youtube.com/embed/Y_TJoSf6_z0",
+						"type": "video"
+					}, 
+					{
+						"title": "Muddy Waters, Rollin Stone (1954)",
+						"link": "https://www.youtube.com/embed/z5RwNit_HUw",
+						"type": "video"
+					}
+				]
+			},
+			{
+				"from": "Pete",
+				"title": "Wolf on TV",
+				"message": "../docs/set_four/pete.txt",
+				"qualifiers": {
+					"connectWithCheckers": "connectedCheckers"
+				},
+				"attachments": [
+					{
+						"title": "Howlin Wolf on Shindig!",
+						"link": "https://www.youtube.com/embed/gWBS0GX1s9o",
+						"type": "video"
+					}
+				]
+			},
+			{
+				"from": "^bigNameArtist",
+				"title": "The mystery tramp",
+				"message": "../docs/set_four/big_act.txt",
+				"decision": {
+					"title": "Would you like to supply the additional amps for ^bigNameArtist's electric set?",
+					"variable": "supplyAmps",
+					"options": [
+						{
+							"title": "Yes supply them",
+							"variable": "approveAmps",
+							"cost": 5,
+							"outcome": "festivalTwo"
+						},
+						{
+							"title": "Ask ^bigNameArtist to perform acoustic",
+							"variable": "denyAmps",
+							"cost": 0,
+							"outcome": "festivalOne"
+						}
+					]
+				},
+				"attachments": [
+					{
+						"title": "Like a Rolling Stone",
+						"link": "https://www.youtube.com/embed/a6Kv0vF41Bc",
+						"type": "video"
+					},
+					{
+						"title": "Maggie's Farm",
+						"link": "https://www.youtube.com/embed/G8yU8wk67gY",
+						"type": "video"
+					}
+				]
+			}
+		],
+		[
+			{
+				"from": "Richard Blank",
+				"title": "Recordings",
+				"message": "../docs/set_five/richard.txt",
+				"decision": {
+					"title": "Would you like to book Tim Jenkins?",
+					"variable": "bookTim",
+					"options": [
+						{
+							"title": "Yes, book Tim Jenkins",
+							"variable": "bookedTim",
+							"cost": 25,
+							"outcome": "festivalOne"
+						},
+						{
+							"title": "No, don't book Tim Jenkins",
+							"variable": "didNotBookTim",
+							"cost": 0,
+							"outcome": "festivalTwo"
+						}
+					]
+				},
+				"attachments": []
+			},
+			{
+				"from": "Paul Trout",
+				"title": "Tribute Final Budget",
+				"message": "../docs/set_five/paul.txt",
+				"decision": {
+					"title": "Would you like to hold the Bellylead tribute?",
+					"variable": "heldLBTribute",
+					"options": [
+						{
+							"title": "Hold the tribute",
+							"variable": "heldTribute",
+							"cost": 25,
+							"outcome": "festivalOne"
+						},
+						{
+							"title": "Don't hold the tribute",
+							"variable": "stoppedTribute",
+							"cost": 0,
+							"outcome": "festivalTwo"
+						}
+					]
+				},
+				"attachments": []
+			},
+			{
+				"from": "Leonard Checkers",
+				"title": "Wolf Performance",
+				"message": "../docs/set_five/leonard_one.txt",
+				"attachments": [],
+				"qualifiers": {
+					"wolfStyle": "electric"
+				},
+				"decision": {
+					"title": "Do you want to book Howlin Wolf?",
+					"variable": "bookWolf",
+					"options": [
+						{
+							"title": "Yes, book Wolf for Frescarose",
+							"variable": "bookWolfElectric",
+							"cost": 25,
+							"outcome": "festivalTwo"
+						},
+						{
+							"title": "No, don't book Wolf",
+							"variable": "ignoredWolf",
+							"cost": 0,
+							"outcome": "neutral"
+						}
+					]
+				},
+				"attachments": []
+			},
+			{
+				"from": "Leonard Checkers",
+				"title": "Wolf Performance",
+				"message": "../docs/set_five/leonard_two.txt",
+				"attachments": [],
+				"qualifiers": {
+					"wolfStyle": "acoustic"
+				},
+				"decision": {
+					"title": "Do you want to book Howlin Wolf?",
+					"variable": "bookWolf",
+					"options": [
+						{
+							"title": "Yes, book Wolf for Frescarose",
+							"variable": "bookWolfAcoustic",
+							"cost": 25,
+							"outcome": "festivalOne"
+						},
+						{
+							"title": "No, don't book Wolf",
+							"variable": "ignoredWolf",
+							"cost": 0,
+							"outcome": "neutral"
+						}
+					]
+				},
+				"attachments": []
+			},
+			{
+				"from": "^bigNameArtist",
+				"title": "Highway 61",
+				"message": "../docs/set_one/big_act.txt",
+				"qualifiers": {
+					"supplyAmps": "denyAmps"
+				},
+				"attachments": [],
+				"decision": {
+					"title": "Do you want to keep ^bigNameArtist?",
+					"variable": "supplyAmps",
+					"options": [
+						{
+							"title": "Yes, keep ^bigNameArtist",
+							"variable": "approveAmps",
+							"cost": 5,
+							"outcome": "festivalTwo"
+						},
+						{
+							"title": "No, remove ^bigNameArtist",
+							"variable": "denyAmps",
+							"cost": 0,
+							"outcome": "festivalOne"
+						}
+					]
+				}
+			}
+		]
+	],
+	"optionCosts": {
+		"bigNameArtist": {
+			"Dob Billon": 25,
+			"Bone Jazz": 25,
+			"Peeler": 25
+		},
+		"sendRichardRecorder": {
+			"approvedRichardRecorder": 5,
+			"ignoredRichardRecorder": 0
+		},
+		"sendRonToMS": {
+			"approvedRonMS": 5,
+			"deniedRonMS": 0
+		},
+		"donStay": {
+			"approveDonStayMS": 5,
+			"approveDonStayTN": 5
+		},
+		"lbTributeStyle": {
+			"lbTraditionalStyle": 0,
+			"lbContempStyle": 0
+		},
+		"connectWithCheckers": {
+			"connectedCheckers": 0,
+			"ignoredCheckers": 0
+		},
+		"supplyAmps": {
+			"approveAmps": 5,
+			"denyAmps": -25
+		},
+		"bookWolf": {
+			"bookWolfAcoustic": 25,
+			"bookWolfElectric": 25
+		},
+		"heldLBTribute": {
+			"heldTribute": 25,
+			"stoppedTribute": 0
+		},
+		"bookTim": {
+			"bookedTim": 25,
+			"didNotBookTim": 0
+		}
+	},
+	"outcomeTies": {
+		"bigNameArtist": {
+			"dobBillin": "festivalTwo",
+			"boneJazz": "festivalTwo",
+			"pds": "festivalTwo"
+		},
+		"sendRichardRecorder": {
+			"approvedRichardRecorder": "festivalOne",
+			"ignoredRichardRecorder": "festivalTwo"
+		},
+		"sendRonToMS": {
+			"approvedRonMS": "festivalOne",
+			"deniedRonMS": "festivalTwo"
+		},
+		"lbTributeStyle": {
+			"lbTraditionalStyle": "festivalOne",
+			"lbContempStyle": "festivalTwo"
+		},
+		"connectWithCheckers": {
+			"connectedCheckers": "festivalTwo",
+			"ignoredCheckers": "festivalOne"
+		}
+	},
+	"outcomes": {
+		"festivalOne": {
+			"title": "This Year's Frescarose Folk Festival",
+			"subtitle": "Quaint, authentic and traditional, the concert barely makes a sound.",
+			"text": "This year's Frescarose Folk Festival featured a series of performances from traditional folk artists many in the audience had never heard of. While each set gave viewers an authentic impression of traditional American folk music, the artists' platform felt highly limited. Attendance fell steeply, raising significant concerns about Frescarose's long-term economic sustainability. Director ^name has drawn significant heat for the economic letdown."
+		},
+		"festivalTwo": {
+			"title": "This Year's Frescarose Folk Festival",
+			"subtitle": "Wild crowds, one misplaced performance from ^bigNameArtist and a genre in confusion.",
+			"text": "This year's Frescarose Folk Festival featured a series of performances from traditional folk artists and newer 'rock and roll' performers alike. In front of its largest-ever audience, Frescarose confirmed that the folk music genre is in a state of flux. Unsure of itself or what belongs. Few connections can be drawn between the artists' different sets. The festival's mission felt subdued, and the audience had no idea what to think of the louder, electric performances. Ultimately, the largeness of the event appeared to cave in on itself -- rather than presenting the folk genre, the concert gave viewers an impression of muddied disarray.\nFolk music experts, including Todd Lorax, are calling for the resignation of Director ^name for a failure to adhere to Frescrarose's mission to present authentic folk music and tradition."
+		}
+	}
+}
