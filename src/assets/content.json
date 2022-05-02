@@ -873,7 +873,7 @@
 			{
 				"from": "^bigNameArtist",
 				"title": "Highway 61",
-				"message": "../docs/set_one/big_act.txt",
+				"message": "../docs/set_five/big_act.txt",
 				"qualifiers": {
 					"supplyAmps": "denyAmps"
 				},
