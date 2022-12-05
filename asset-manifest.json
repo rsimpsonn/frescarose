@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/frescarose/static/css/main.0ff2c726.css",
+    "main.js": "/frescarose/static/js/main.9309f750.js",
+    "static/js/787.e1c44021.chunk.js": "/frescarose/static/js/787.e1c44021.chunk.js",
+    "static/media/folkbackground.png": "/frescarose/static/media/folkbackground.198c0fac976e06dffc6d.png",
+    "index.html": "/frescarose/index.html",
+    "main.0ff2c726.css.map": "/frescarose/static/css/main.0ff2c726.css.map",
+    "main.9309f750.js.map": "/frescarose/static/js/main.9309f750.js.map",
+    "787.e1c44021.chunk.js.map": "/frescarose/static/js/787.e1c44021.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0ff2c726.css",
+    "static/js/main.9309f750.js"
+  ]
+}
