@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/frescarose/static/css/main.0ff2c726.css",
-    "main.js": "/frescarose/static/js/main.b358e048.js",
+    "main.js": "/frescarose/static/js/main.c39a037a.js",
     "static/js/787.e1c44021.chunk.js": "/frescarose/static/js/787.e1c44021.chunk.js",
     "static/media/folkbackground.png": "/frescarose/static/media/folkbackground.198c0fac976e06dffc6d.png",
     "index.html": "/frescarose/index.html",
     "main.0ff2c726.css.map": "/frescarose/static/css/main.0ff2c726.css.map",
-    "main.b358e048.js.map": "/frescarose/static/js/main.b358e048.js.map",
+    "main.c39a037a.js.map": "/frescarose/static/js/main.c39a037a.js.map",
     "787.e1c44021.chunk.js.map": "/frescarose/static/js/787.e1c44021.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0ff2c726.css",
-    "static/js/main.b358e048.js"
+    "static/js/main.c39a037a.js"
   ]
 }
